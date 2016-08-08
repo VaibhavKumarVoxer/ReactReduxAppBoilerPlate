@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
+import classNames from 'classnames'
+import styles from '../resources/bootstrap/css/bootstrap.min.css'
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -14,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames(styles['panel'],styles['panel-default'])}>
         <p>
         {'This is my App!'}
         </p>

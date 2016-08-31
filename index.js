@@ -7,6 +7,10 @@ import configureStore from './store/configureStore'
 
 const store = configureStore()
 
+/***************************************************************************************
+Entry point of our SPA. Provider component is important to be able to use '{connect}' component
+of react-redux. App is our base-parent component.
+********************************************************************************************/
 render(
   <Provider store={store}>
     <App />

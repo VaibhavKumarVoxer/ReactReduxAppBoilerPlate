@@ -3,7 +3,9 @@ import {
   TYPE_1
 } from '../actions'
 
-
+/***************************************************************************************
+Defines state conversion for each action, later all reducers would be conflated to make store
+********************************************************************************************/
 function reducer1(state = { }, action) {
   switch (action.type) {
     case TYPE_1:
